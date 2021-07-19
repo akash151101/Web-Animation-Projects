@@ -1,0 +1,30 @@
+body, html{
+  margin:0;
+  padding: 20px;
+  cursor: none;
+}
+#navbarNav{
+  justify-content: flex-end;
+}
+.nav-link{
+  letter-spacing: 3px;
+  margin: auto 20px;
+  position: relative;
+  z-index: 3;
+}
+.cursor{
+  width: 40px;
+  height: 40px;
+  border: 2px solid;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  transform: translate(-50%,-50%);
+  transition: all 0.2s ease;
+  transition-property: background-color, transform;
+  transform-origin: 100% 100%;
+}
+.cursor-hover{
+  transform: scale(2,2);
+  background-color: #000;
+}

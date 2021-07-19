@@ -1,0 +1,100 @@
+
+body, html{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  *behavior: url(CSS/boxsizing.htc);
+}
+
+.head-container{
+  min-height: 30rem;
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 5rem;
+  padding: 4rem;
+}
+span{
+  color: #dd2c00;
+}
+h1{
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+h3{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+.grid-bar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.grid-items{
+  width: 54rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 30px;
+  margin-bottom: 1.5rem;
+  background-color: #e8e4e1;
+
+}
+.grid-content{
+  padding-bottom: 4rem;
+}
+.grid-content p{
+  margin: 0;
+  padding: 2rem 0;
+  color: #000;
+  font-weight: bold;
+}
+button{
+  background-color: #000;
+  color: #ffff;
+  border: none;
+  text-decoration: none;
+  width: 6rem;
+  height: 2.7rem;
+}
+button:hover{
+  opacity: 0.7;
+}
+.grid-items:nth-child(even) img{
+  order: 2;
+  width: 365.65px;
+}
+.grid-items:nth-child(even) .grid-content{
+  padding-left: 30px;
+}
+@media (max-width: 600px) {
+   .grid-items{
+     display: flex;
+     flex-direction: row;
+     display: block;
+     width: 30rem;
+   }
+   .grid-items:nth-child(even) img{
+     order: 1;
+     width: 100%;
+   }
+   .grid-content{
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     padding: 20px;
+   }
+   .grid-content p{
+     padding: 0 0 3rem;
+   }
+}
